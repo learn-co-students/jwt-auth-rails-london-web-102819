@@ -1,5 +1,7 @@
+require 'faker'
+
 15.times do
   User.create(
-    username: Faker::Friends.character, password: 'hi', avatar: Faker::Fillmurray.image, bio: Faker::Friends.quote
+    username: Faker::Name.name, password: 'hi', avatar: Faker::Fillmurray.image, bio: Faker::Movies::HarryPotter.quote
   )
 end
